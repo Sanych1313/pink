@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сайт фотоприложеия Pink</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -12,32 +14,21 @@
     </a>
 
     <nav class="top-menu">
-      <button class="top-menu__toggle" type="button">Открыть/закрыть меню</button>
-
-      <ul class="top-menu__list">
-        <li class="top-menu__item">
-          <a href="index.html">Главная</a>
-        </li>
-
-        <li class="top-menu__item top-menu__item--active">
-          <a>Фотографии</a>
-        </li>
-
-        <li class="top-menu__item">
-          <a href="form.html">Конкурс</a>
-        </li>
-
-        <li class="top-menu__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul><!--/top-menu__list-->
+      <a href="index.html">Главная</a>
+      <a>Фотографии</a>
+      <a href="form.html">Конкурс</a>
+      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </nav><!--/top-menu-->
   </header><!--/page-header-->
 
-  <h1 class="page-photo-title">Фотографии пользователей</h1>
+  <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
+
+  <div class="intro-photo intro">
+    <h2 class="intro__title">Фотографии пользователей</h2>
+  </div>
 
   <div class="page-photo">
-      <h2 class="page-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+      <h3 class="page-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
 
       <div class="page-photo__item">
         <img class="page-photo__pic page-photo__pic--of-the-day" src="https://placehold.it/320x137" alt="Панорама дня" width="320" height="137">

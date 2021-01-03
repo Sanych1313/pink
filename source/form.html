@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сайт фотоприложеия Pink</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
@@ -12,32 +14,21 @@
     </a>
 
     <nav class="top-menu">
-      <button class="top-menu__toggle" type="button">Открыть/закрыть меню</button>
-
-      <ul class="top-menu__list">
-        <li class="top-menu__item">
-          <a href="index.html">Главная</a>
-        </li>
-
-        <li class="top-menu__item top-menu__item--active">
-          <a href="photo.html">Фотографии</a>
-        </li>
-
-        <li class="top-menu__item">
-          <a>Конкурс</a>
-        </li>
-
-        <li class="top-menu__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        </li>
-      </ul><!--/top-menu__list-->
+      <a href="index.html">Главная</a>
+      <a href="photo.html">Фотографии</a>
+      <a>Конкурс</a>
+      <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </nav><!--/top-menu-->
   </header><!--/page-header-->
 
-  <h1 class="page-form-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
+
+  <div class="intro-form intro">
+    <h2 class="intro__title">Фотографии пользователей</h2>
+  </div>
 
   <div class="competition">
-    <h2 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</h2>
+    <h3 class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз &#8212; 1000 миль на вашу бонусную карту!</h3>
 
     <form class="competition__form competition-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="competition-form__user form-user">
@@ -53,7 +44,7 @@
 
       <fieldset class="competition-form__achievements form-achievements">
         <legend class="form-achievements__title">Ваши безбашенные достижения в путешествии</legend>
-        <h3 class="form-achievements__title--mobile">Ваши безбашенные достижения в путешествии</h3>
+        <h4 class="form-achievements__title--mobile">Ваши безбашенные достижения в путешествии</h4>
 
         <input type="checkbox" id="selfie" name="selfie-with-shark" checked>
         <label class="form-achievements__checkbox" for="selfie">Сделал селфи с акулой</label>
@@ -86,7 +77,7 @@
 
       <fieldset class="competition-form__apps form-apps">
         <legend class="form-apps__title">С каким приложением путешествовали?</legend>
-        <h3 class="form-apps__title--mobile">С каким приложением путешествовали?</h3>
+        <h4 class="form-apps__title--mobile">С каким приложением путешествовали?</h4>
 
         <input type="radio" id="iOS" name="travel-apps" value="iOS" checked>
         <label class="form-apps__radio" for="iOS">Pink для iOS</label>
@@ -100,7 +91,7 @@
 
       <fieldset class="competition-form__emotion form-emotion">
         <legend class="form-emotion__title">Опишите свои эмоции</legend>
-        <h3 class="form-emotion__title--mobile">Опишите свои эмоции</h3>
+        <h4 class="form-emotion__title--mobile">Опишите свои эмоции</h4>
 
         <textarea class="form-emotion__text" name="emotion-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset><!--/competition-form__emotion-->

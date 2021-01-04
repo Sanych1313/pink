@@ -1,13 +1,14 @@
 .intro {
   background-image: url(../img/backgound-mobile.jpg);
   background-repeat: no-repeat;
-  background-position: 0 -67px;
+  background-position: 50% -67px;
   background-color: $darkenblue;
 }
 
 .intro__title {
-  margin: 0 25px;
+  margin: 0 auto;
   padding: 0;
+  width: 270px;
 
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 2.4rem;
@@ -20,31 +21,33 @@
 .intro-index {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
   padding-top: 23px;
 
   .intro__title {
-    margin-bottom: 316px;
+    margin-bottom: 30px;
   }
 }
 
-.intro-photo {
-  padding: 31px 0 83px;
-}
+.intro__pic-wrapper {
+  position: relative;
 
-.intro-form {
-  padding: 31px 0 55px;
+  width: 320px;
+  min-height: 286px;
+  margin: 0 auto;
 }
 
 .intro__pic-hand {
   position: absolute;
-  top: 109px;
+  top: 0;
   left: 0;
   z-index: 1;
 }
 
 .intro__pic-photo {
   position: absolute;
-  top: 142px;
+  top: 33px;
   left: 104px;
 
   filter: brightness(0.9) contrast(0.9);
@@ -54,7 +57,7 @@
   position: relative;
   z-index: 2;
 
-  padding: 28px 20px 33px;
+  padding: 28px 20px 32px;
 
   text-align: center;
 
@@ -76,16 +79,16 @@
 }
 
 .intro__button {
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
 }
 
 .intro__apps {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
-  margin: 0;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
   padding: 0 20px;
+  width: 280px;
 
   list-style: none;
 }
@@ -121,7 +124,8 @@
 }
 
 .intro__description {
-  margin: 0;
+  margin: 0 auto;
+  width: 280px;
 
   font-family: "OpenSansLight", Arial, sans-serif;
   font-size: 1.4rem;

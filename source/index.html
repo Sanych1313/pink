@@ -39,10 +39,12 @@
   <section class="intro-index intro">
     <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
 
+    <div class="intro__pic-wrapper">
     <img class="intro__pic-hand" src="img/intro-pic-hand.png" alt="Фон рука с телефоном" width="320" height="314">
 
     <img class="intro__pic-photo" src="img/intro-pic-photo.png" alt="Фон фото в телефоне" width="111"
       height="197">
+    </div>
 
     <div class="intro__wrapper">
       <a class="intro__button button"  href="#">Скачать приложение</a>
@@ -67,27 +69,29 @@
 </div>
 
   <div class="info">
-    <p class="info__description">Устали от серости мегаполиса?</p>
-    <p class="info__description">Нам есть, что вам предложить!</p>
+    <div class="info__wrapper">
+      <p class="info__description">Устали от серости мегаполиса?</p>
+      <p class="info__description">Нам есть, что вам предложить!</p>
 
-    <ul class="info__list info-list">
-      <li class="info-list__item">
-        <h3 class="info-list__title">Поднимает настроение</h3>
-        <p class="info-list__description">Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
-      </li>
+      <ul class="info__list info-list">
+        <li class="info-list__item">
+          <h3 class="info-list__title">Поднимает настроение</h3>
+          <p class="info-list__description">Приложение позволит вам победить осенюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
 
-      <li class="info-list__item">
-        <h3 class="info-list__title">Меняет мир вокруг</h3>
-        <p class="info-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </li>
+        <li class="info-list__item">
+          <h3 class="info-list__title">Меняет мир вокруг</h3>
+          <p class="info-list__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
 
-      <li class="info-list__item">
-        <h3 class="info-list__title">Заводит новых друзей</h3>
-        <p class="info-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </li>
-    </ul><!--/info__list-->
+        <li class="info-list__item">
+          <h3 class="info-list__title">Заводит новых друзей</h3>
+          <p class="info-list__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul><!--/info__list-->
 
-    <img class="info__pic-phone" src="http://placehold.it/157x320" alt="Телефон на фоне" width="157" height="320">
+      <img class="info__pic-phone" src="img/info-pic-phone.png" alt="Телефон на фоне" width="157" height="320">
+    </div>
   </div><!--/info-->
 
   <section class="diagram">
@@ -100,10 +104,16 @@
     <ul class="review__list">
       <li class="review__item">
         <p class="review__autor">Николай Петров</p>
-        <p class="review__autor-data">25 лет, водитель трамвая</p>
+        <p class="review__autor-date">25 лет, водитель трамвая</p>
         <blockquote class="review__text">&#171;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&#187;</blockquote>
       </li>
     </ul><!--/review__list-->
+
+    <ul class="review__pagination">
+      <li class="review__pagination-item review__pagination-item--active"></li>
+      <li class="review__pagination-item"></li>
+      <li class="review__pagination-item"></li>
+    </ul><!--/review__pagination-->
   </div><!--/review-->
 
   <div class="price">

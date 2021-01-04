@@ -1,0 +1,74 @@
+.review {
+  position: relative;
+
+  background-color: $white;
+}
+
+.review__list {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  list-style: none;
+}
+
+.review__item {
+  padding: 49px 20px 32px;
+
+  text-align: center;
+}
+
+.review__autor,
+.review__autor-date,
+.review__text {
+  margin: 0;
+}
+
+.review__autor {
+  margin-bottom: 19px;
+
+  font-family: "OpenSansBold", Arial, sans-serif;
+}
+
+.review__autor-date {
+  display: none;
+}
+
+.review__text {
+  font-size: 1.4rem;
+  line-height: 2.2;
+}
+
+.review__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+
+  list-style: none;
+}
+
+.review__pagination-item {
+  width: 6px;
+  height: 6px;
+
+  background-color: #bec2c7;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  &:nth-child(2) {
+    margin: 0 17px;
+  }
+}
+
+.review__pagination-item--active {
+  width: 12px;
+  height: 12px;
+
+  background-color: $white;
+  border: 3px solid $black;
+  border-radius: 50%;
+}

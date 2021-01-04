@@ -13,6 +13,12 @@
   cursor: default;
 }
 
+.pade-header__logo,
+.top-menu {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-header__logo-pic--index,
 .page-header__logo-pic {
   margin: 22px 0px 22px 20px;
@@ -20,44 +26,6 @@
 
 .page-header__logo-pic:hover {
   cursor: pointer;
-}
-
-/*.top-menu__close {
-  position: absolute;
-  top: 18px;
-  right: 34px;
-
-  font-size: 0;
-
-  cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    width: 5px;
-    height: 29px;
-
-    background-color: $white;
-
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-
-    width: 5px;
-    height: 29px;
-
-    background-color: $white;
-
-    transform: rotate(-45deg);
-  }
-}*/
-
-.top-menu__open {
-  font-size: 0;
 }
 
 .top-menu__list {

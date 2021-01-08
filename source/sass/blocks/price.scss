@@ -1,22 +1,27 @@
 .price {
+  padding-top: 454px;
+  padding-bottom: 46px;
+
+  background: linear-gradient(-184.5deg, #ffffff 17.3%, #f2f2f2 0%);
+  
+  overflow-y: hidden;
+}
+
+.price__wrapper {
   position: relative;
 
   width: 320px;
   margin: 0 auto;
-  padding-top: 412px;
-  padding-bottom: 46px;
-
-  background: linear-gradient(-184.8deg, #ffffff 5.3%, #f2f2f2 0%);
 }
 
 .price__table {
   position: absolute;
-  top: 91px;
+  top: -321px;
   left: -258px;
 
   width: 836px;
 
-  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .price-table--hidden,
@@ -26,13 +31,13 @@
 
 .price-table__data {
   background-color: $white;
-  border: 2px solid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 th {
   background-color: $darkBlue;
-  border-left: 2px solid #e5e5e5;
-  border-right: 2px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
 }
 
 .price-table__title {

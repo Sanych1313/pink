@@ -22,6 +22,20 @@
   width: 836px;
 
   border-spacing: 0;
+
+  transition: transform 0.5s linear;
+}
+
+.price__table--first {
+  transform: translateX(258px);
+
+  transition: transform 0.5s linear;
+}
+
+.price__table--third {
+  transform: translateX(-258px);
+
+  transition: transform 0.5s linear;
 }
 
 .price-table--hidden,

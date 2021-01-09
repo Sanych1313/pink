@@ -1,0 +1,88 @@
+.page-photo__wrapper {
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.page-photo__title {
+  margin: 0;
+  padding: 46px 35px 48px;
+
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: $darkBlue;
+  line-height: 2.2;
+  text-align: center;
+}
+
+.page-photo__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.page-photo__pic {
+  display: block;
+}
+
+.page-photo__description {
+  padding: 22px 10px 26px 18px;
+
+  width: 280px;
+
+  background-color: #f2f2f2;
+}
+
+.page-photo__autor,
+.page-photo__text {
+  margin: 0;
+
+  color: $darkBlue;
+}
+
+.page-photo__autor {
+  margin-bottom: 5px;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.page-photo__date {
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.page-photo__text {
+  margin-bottom: 15px;
+
+  font-size: 1.4rem;
+  line-height: 1.75;
+}
+
+.page-photo__like {
+  position: relative;
+  margin: 0;
+  margin-left: 33px;
+
+  font-size: 1.2rem;
+  color: #d22856;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -33px;
+    width: 13px;
+    height: 12px;
+
+    background-image: url(../img/icon-heart.png);
+    background-repeat: no-repeat;
+  }
+}

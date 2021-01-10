@@ -235,6 +235,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 320px;
   margin: 0 auto;
   padding: 41px 28px; }
@@ -282,9 +285,35 @@
 .info-list__item:last-of-type .info-list__description {
   margin-bottom: 43px; }
 
-.info__pic-phone {
-  -ms-flex-item-align: center;
-      align-self: center; }
+@media (min-width: 660px) {
+  .info {
+    background: linear-gradient(-184.4deg, #ffffff 35.6%, #f2f2f2 0%); }
+  .info__wrapper {
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 660px;
+    padding: 49px 19px 85px; }
+  .info__description {
+    font-size: 4rem; }
+    .info__description:first-of-type {
+      margin-bottom: 0; }
+    .info__description:last-of-type {
+      width: 350px;
+      margin-bottom: 124px; }
+  .info__list {
+    margin-left: 311px; }
+  .info-list__item {
+    text-align: left; }
+  .info-list__description {
+    margin-bottom: 37px; }
+  .info__pic-phone {
+    position: absolute;
+    top: 244px;
+    left: 20px;
+    width: 268px;
+    height: 547px; } }
 
 .diagram {
   display: none; }

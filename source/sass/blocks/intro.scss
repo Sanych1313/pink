@@ -140,3 +140,68 @@
   color: $white;
   line-height: 1.7;
 }
+
+@media (min-width: 660px) {
+  .intro {
+    background-image: url(../img/backgound-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% -111px;
+  }
+
+  .intro-index {
+    padding: 92px 0 108px;
+  }
+
+  .container {
+    position: relative;
+
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .intro__title {
+    margin-left: 70px;
+    width: 200px;
+
+    font-size: 4rem;
+  }
+
+  .intro__pic-wrapper {
+    position: absolute;
+    bottom: -108px;
+    left: 0;
+
+    width: 660px;
+    min-height: 545px;
+  }
+
+  .intro__pic-photo {
+    top: 53px;
+    left: 371px;
+  }
+
+  .intro__wrapper {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .button {
+    width: 30rem;
+  }
+
+  .intro__button {
+    margin: 0 auto 46px 20px;
+  }
+
+  .intro__apps {
+    margin: 0 auto 37px 29px;
+  }
+
+  .intro__description {
+    width: 300px;
+    margin-left: 21px;
+
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+}

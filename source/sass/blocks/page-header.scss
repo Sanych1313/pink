@@ -63,6 +63,14 @@
   letter-spacing: 0.5px;
 }
 
-.page-header__wrapper--close {
-  display: none;
+@media (min-width: 660px) {
+  .pade-header__logo,
+  .top-menu {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .page-header__logo-pic--index {
+    margin: 28px 0px 38px 20px;
+  }
 }

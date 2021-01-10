@@ -56,8 +56,13 @@
   text-align: center;
   letter-spacing: 0.5px; }
 
-.page-header__wrapper--close {
-  display: none; }
+@media (min-width: 660px) {
+  .pade-header__logo,
+  .top-menu {
+    width: 660px;
+    margin: 0 auto; }
+  .page-header__logo-pic--index {
+    margin: 28px 0px 38px 20px; } }
 
 .intro {
   background-image: url(../img/backgound-mobile.jpg);
@@ -178,6 +183,45 @@
   font-size: 1.4rem;
   color: #ffffff;
   line-height: 1.7; }
+
+@media (min-width: 660px) {
+  .intro {
+    background-image: url(../img/backgound-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% -111px; }
+  .intro-index {
+    padding: 92px 0 108px; }
+  .container {
+    position: relative;
+    width: 660px;
+    margin: 0 auto; }
+  .intro__title {
+    margin-left: 70px;
+    width: 200px;
+    font-size: 4rem; }
+  .intro__pic-wrapper {
+    position: absolute;
+    bottom: -108px;
+    left: 0;
+    width: 660px;
+    min-height: 545px; }
+  .intro__pic-photo {
+    top: 53px;
+    left: 371px; }
+  .intro__wrapper {
+    padding: 0;
+    background-color: transparent; }
+  .button {
+    width: 30rem; }
+  .intro__button {
+    margin: 0 auto 46px 20px; }
+  .intro__apps {
+    margin: 0 auto 37px 29px; }
+  .intro__description {
+    width: 300px;
+    margin-left: 21px;
+    font-size: 1.8rem;
+    line-height: 1.4; } }
 
 .info {
   margin-bottom: -85px;
@@ -1061,10 +1105,9 @@ input:checked + .form-apps__radio::after {
   width: 320px;
   margin: 0 auto; }
 
-.competition-form__button {
+.btn {
   width: 280px;
   padding: 21px 0;
-  margin-bottom: 43px;
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
@@ -1073,11 +1116,14 @@ input:checked + .form-apps__radio::after {
   border: none;
   cursor: pointer;
   outline: none; }
-  .competition-form__button:hover {
+  .btn:hover {
     background-color: #1c9b5e; }
-  .competition-form__button:focus {
+  .btn:focus {
     color: #61b98f;
     background-color: #1c9b5e; }
+
+.competition-form__button {
+  margin-bottom: 43px; }
 
 .competition-form__note {
   margin: 0;
@@ -1087,6 +1133,78 @@ input:checked + .form-apps__radio::after {
 
 .competition-form__note span {
   color: #d22856; }
+
+.popup-error,
+.popup-sent {
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  display: none;
+  width: 320px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 10px 25px -10px #000000;
+          box-shadow: 0 10px 25px -10px #000000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%); }
+  70% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%); }
+  85% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%); }
+  70% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%); }
+  85% {
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.popup-open {
+  display: block;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; }
+
+.popup-error {
+  padding: 40px 20px; }
+
+.popup-sent__wrapper {
+  padding: 40px 26px 0; }
+
+.poput-sent__wrapper-button {
+  padding: 50px 20px;
+  background-color: #f2f2f2; }
+
+.popup__title,
+.popup__description {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+.popup__title {
+  margin-bottom: 40px; }
+
+.popup__description {
+  margin-bottom: 40px;
+  font-size: 1.4rem;
+  line-height: 1.6; }
 
 *,
 *::before,
@@ -1132,5 +1250,10 @@ body {
   font-size: 1.8rem;
   line-height: 1.1;
   color: #000000; }
+
+@media (min-width: 660px) {
+  body {
+    min-width: 660px;
+    margin: auto; } }
 
 /*# sourceMappingURL=style.css.map */

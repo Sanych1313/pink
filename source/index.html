@@ -10,7 +10,10 @@
 <body>
   <header class="page-header">
     <a class="pade-header__logo logo">
-      <img class="page-header__logo-pic--index" src="img/logo-mobile-header.png" width="75" height="22" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+      <picture>
+        <source media="(min-width: 660px)" srcset="img/logo-tablet-header.png">
+        <img class="page-header__logo-pic--index" src="img/logo-mobile-header.png" alt="Логотип фотоприложения pink" title="Логотип фотоприложения pink">
+      </picture>
     </a>
 
     <nav class="top-menu">
@@ -37,34 +40,41 @@
   <h1 class="visually-hidden">Сайт фотоприложеия Pink</h1>
 
   <section class="intro-index intro">
-    <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+    <div class="container">
+      <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
 
-    <div class="intro__pic-wrapper">
-    <img class="intro__pic-hand" src="img/intro-pic-hand.png" alt="Фон рука с телефоном" width="320" height="314">
+      <div class="intro__pic-wrapper">
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/intro-pic-hand-tablet.png">
+          <img class="intro__pic-hand" src="img/intro-pic-hand.png" alt="Фон рука с телефоном">
+        </picture>
 
-    <img class="intro__pic-photo" src="img/intro-pic-photo.png" alt="Фон фото в телефоне" width="111"
-      height="197">
-    </div>
+        <picture>
+          <source media="(min-width: 660px)" srcset="img/intro-pic-photo-tablet.png">
+          <img class="intro__pic-photo" src="img/intro-pic-photo.png" alt="Фон фото в телефоне">
+        </picture>
+      </div>
 
-    <div class="intro__wrapper">
-      <a class="intro__button button"  href="#">Скачать приложение</a>
+      <div class="intro__wrapper">
+        <a class="intro__button button"  href="#">Скачать приложение</a>
 
-      <ul class="intro__apps">
-        <li class="intro__apps-item">
-          <a class="intro__apps-link intro__apps-link--apple" href="#">apple</a>
-        </li>
+        <ul class="intro__apps">
+          <li class="intro__apps-item">
+            <a class="intro__apps-link intro__apps-link--apple" href="#">apple</a>
+          </li>
 
-        <li class="intro__apps-item">
-          <a class="intro__apps-link intro__apps-link--android" href="#">android</a>
-        </li>
+          <li class="intro__apps-item">
+            <a class="intro__apps-link intro__apps-link--android" href="#">android</a>
+          </li>
 
-        <li class="intro__apps-item">
-          <a class="intro__apps-link intro__apps-link--microsoft" href="#">microsoft</a>
-        </li>
-      </ul>
+          <li class="intro__apps-item">
+            <a class="intro__apps-link intro__apps-link--microsoft" href="#">microsoft</a>
+          </li>
+        </ul>
 
-      <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-    </div><!--/intro__wrapper-->
+        <p class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div><!--/intro__wrapper-->
+    </div><!--/container-->
   </section><!--/intro-index-->
 </div>
 

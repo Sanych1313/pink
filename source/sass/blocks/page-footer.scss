@@ -77,3 +77,40 @@
   background-image: url(../img/logo-htmlacademy-mobile.png);
   background-repeat: no-repeat;
 }
+
+@media (min-width: 660px) {
+  .page-footer--index-mobile {
+    position: relative;
+    bottom: -406px;
+    
+    display: block;
+
+    background-color: $white;
+  }
+
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 660px;
+    margin: 0 auto;
+    padding: 0 19px 39px;
+  }
+
+  .page-footer__logo,
+  .page-footer__social {
+    margin: 0;
+  }
+
+  .page-footer__logo {
+    padding-top: 29px;
+  }
+
+  .page-footer__social {
+    padding-top: 37px;
+  }
+
+  .page-footer__copyright {
+    padding-top: 43px;
+  }
+}

@@ -166,5 +166,77 @@ th {
 
   background-color: #ffffff;
   border: 3px solid #000000;
+}
 
+@media (min-width: 660px) {
+  .price {
+    padding: 0;
+
+    background: linear-gradient(-184.5deg, #ffffff 20%, #f2f2f2 0%);
+  }
+
+  .price__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    padding: 109px 0 70px;
+  }
+
+  .price__table {
+    position: relative;
+    top: 0;
+    left: 20px;
+
+    width: 620px;
+  }
+
+  .price-table--hidden {
+    border: none;
+    background: transparent;
+  }
+
+  .price-table--hidden,
+  .price-table__data--mobile-hidden {
+    display: block;
+  }
+
+  .price-table__data--hidden {
+    display: none;
+  }
+
+  .price-table__title {
+    padding: 18px 0 14px;
+
+    font-size: 1.6rem;
+  }
+
+  .price-table__title--hit::before {
+    left: 0;
+    
+    background-image: url(../img/price-hit-tablet.png);
+  }
+
+  .price-table__price {
+    font-size: 1.8rem;
+  }
+
+  .price-table__data {
+    width: 155px;
+    padding: 15px 0 15px 16px;
+
+    font-size: 1.4rem;
+  }
+
+  .price-table__data--yes::after {
+    top: 14px;
+    left: 61px;
+  }
+
+  .price-table__data--no::after {
+    top: 10px;
+    left: 64px;
+  }
+
+  .price__pagination {
+    display: none;
+  }
 }

@@ -287,7 +287,7 @@
 
 @media (min-width: 660px) {
   .info {
-    background: linear-gradient(-184.4deg, #ffffff 35.6%, #f2f2f2 0%); }
+    background: linear-gradient(-184.4deg, #ffffff 34.8%, #f2f2f2 0%); }
   .info__wrapper {
     position: relative;
     -webkit-box-align: center;
@@ -317,6 +317,44 @@
 
 .diagram {
   display: none; }
+
+@media (min-width: 660px) {
+  .diagram {
+    position: relative;
+    display: block;
+    background-color: #ffffff;
+    z-index: 1; }
+  .diagram__wrapper {
+    position: relative;
+    padding: 98px 33px 125px 330px;
+    width: 660px;
+    margin: 0 auto; }
+  .diagram__pic {
+    position: absolute;
+    top: 59px;
+    left: 20px; }
+  .diagram__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .diagram__title {
+    width: 179px;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 3rem;
+    letter-spacing: 1.4px; }
+  .diagram__description {
+    margin: 0;
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    line-height: 1.7; }
+  .diagram__link {
+    font-size: 1.4rem;
+    color: #d22856; } }
 
 .review {
   position: relative;
@@ -378,6 +416,40 @@
   background-color: #ffffff;
   border: 3px solid #000000;
   border-radius: 50%; }
+
+@media (min-width: 660px) {
+  .review__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 660px;
+    margin: 0 auto; }
+  .review__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 5px 20px; }
+  .review__autor {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 13px;
+    font-size: 2rem; }
+  .review__autor-date {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: block;
+    margin-bottom: 37px;
+    font-size: 1.4rem; }
+  .review__text {
+    margin-bottom: 38px;
+    font-size: 1.8rem;
+    line-height: 1.7; } }
 
 .price {
   padding-top: 454px;
@@ -516,6 +588,48 @@ th {
   background-color: #ffffff;
   border: 3px solid #000000; }
 
+@media (min-width: 660px) {
+  .price {
+    padding: 0;
+    background: linear-gradient(-184.5deg, #ffffff 20%, #f2f2f2 0%); }
+  .price__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    padding: 109px 0 70px; }
+  .price__table {
+    position: relative;
+    top: 0;
+    left: 20px;
+    width: 620px; }
+  .price-table--hidden {
+    border: none;
+    background: transparent; }
+  .price-table--hidden,
+  .price-table__data--mobile-hidden {
+    display: block; }
+  .price-table__data--hidden {
+    display: none; }
+  .price-table__title {
+    padding: 18px 0 14px;
+    font-size: 1.6rem; }
+  .price-table__title--hit::before {
+    left: 0;
+    background-image: url(../img/price-hit-tablet.png); }
+  .price-table__price {
+    font-size: 1.8rem; }
+  .price-table__data {
+    width: 155px;
+    padding: 15px 0 15px 16px;
+    font-size: 1.4rem; }
+  .price-table__data--yes::after {
+    top: 14px;
+    left: 61px; }
+  .price-table__data--no::after {
+    top: 10px;
+    left: 64px; }
+  .price__pagination {
+    display: none; } }
+
 .contacts {
   position: relative;
   width: 320px;
@@ -607,6 +721,50 @@ th {
   z-index: -2;
   width: 320px;
   height: 200px; }
+
+@media (min-width: 660px) {
+  .contacts {
+    width: 660px;
+    margin: 0 auto; }
+  .contacts__wrapper {
+    padding: 48px 0 0; }
+  .contacts__description {
+    font-size: 4rem; }
+  .contacts__description:last-of-type {
+    margin-bottom: 51px; }
+  .contacts__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .contacts__item {
+    width: 330px; }
+    .contacts__item:not(:last-child) {
+      margin-bottom: 53px; }
+    .contacts__item:last-child {
+      margin: 0 auto; }
+  .contacts__address {
+    display: block;
+    width: 250px;
+    margin: 0 auto; }
+  .contacts__map {
+    top: 58px; }
+  .contacts__map--ambded {
+    width: 660px;
+    height: 533px; }
+  .contacts::before {
+    bottom: -261px;
+    left: 312px; }
+  .contacts::after {
+    bottom: -100px;
+    width: 660px;
+    height: 123px;
+    background-image: url(../img/triangle-white-tablet.png); } }
 
 .page-footer--index-mobile {
   display: none; }

@@ -1,3 +1,57 @@
 .diagram {
   display: none;
 }
+
+@media (min-width: 660px) {
+  .diagram {
+    position: relative;
+
+    display: block;
+
+    background-color: #ffffff;
+
+    z-index: 1;
+  }
+
+  .diagram__wrapper {
+    position: relative;
+
+    padding: 98px 33px 125px 330px;
+
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .diagram__pic {
+    position: absolute;
+    top: 59px;
+    left: 20px;
+  }
+
+  .diagram__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .diagram__title {
+    width: 179px;
+    margin: 0;
+    margin-bottom: 15px;
+
+    font-size: 3rem;
+    letter-spacing: 1.4px;
+  }
+
+  .diagram__description {
+    margin: 0;
+    margin-bottom: 18px;
+
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  .diagram__link {
+    font-size: 1.4rem;
+    color: #d22856;
+  }
+}

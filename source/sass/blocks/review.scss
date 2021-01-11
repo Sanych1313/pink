@@ -72,3 +72,41 @@
   border: 3px solid $black;
   border-radius: 50%;
 }
+
+@media (min-width: 660px) {
+  .review__list {
+    display: flex;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .review__item {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 20px;
+  }
+
+  .review__autor {
+    order: 1;
+
+    margin-bottom: 13px;
+
+    font-size: 2rem;
+  }
+
+  .review__autor-date {
+    order: 2;
+
+    display: block;
+    margin-bottom: 37px;
+
+    font-size: 1.4rem;
+  }
+
+  .review__text {
+    margin-bottom: 38px;
+
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+}

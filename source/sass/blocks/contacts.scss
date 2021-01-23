@@ -108,6 +108,8 @@
   z-index: -5;
 
   display: block;
+  width: 320px;
+  height: 645px;
 }
 
 .contacts__map--ambded {
@@ -119,7 +121,7 @@
   height: 200px;
 }
 
-@media (min-width: 660px) {
+/*@media (min-width: 660px) {
   .contacts {
     width: 660px;
     margin: 0 auto;
@@ -183,4 +185,4 @@
 
     background-image: url(../img/triangle-white-tablet.png);
   }
-}
+}*/
